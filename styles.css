@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* TABLE OF CONTENTS///////////////////////////////
+1. CSS RESET
+2. GLOBAL STYLES
+3. TYPOGRAPHY
+4. HEADER
+5. MAIN
+    5.1. MAIN-HELLO
+    5.2. MAIN-WORK
+    5.3. MAIN-SERVICES
+6. FORM
+7. FOOTER
+//////////////////////////////////////////////////*/
+/*------------------1. CSS RESET------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------2. GLOBAL STYLES--------------*/
+
+:root {
+    --color-bg-headers-primary-purple: #5722CD;
+    --color-bg-secondary-blue: #4845E4;
+    --color-bg-light-grey: #F3F6F9;
+    --color-primary-text-black: #0C0C0C;
+    --color-secondary-text-grey: #7A7A7A;
+    --color-large-headings-light-purple: #F2F0FF;
+    --color-buttons-pink: #ED4385;
+
+}
+
+/*------------------3. TYPOGRAPHY-----------------*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-bg-headers-primary-purple);
+    font-size: 14px;
+    font-weight: 300;
+    width: 100vw;
+}
+button {
+    color: #FFFFFF;
+    background-color: var(--color-buttons-pink);
+    border: 0.5rem solid var(--color-buttons-pink);
+    border-radius: 3.5rem;
+    font-size: 0.7rem;
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0,0,0,0.5);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+
+a:link {
+    color: var(--color-bg-headers-primary-purple);
+}
+
+a:hover {
+    color: var(--color-bg-secondary-blue);
+}
+
+/*------------------4. HEADER---------------------*/
+
+header {
+    background: var(--color-bg-headers-primary-purple);
+    background: linear-gradient(90deg, rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 50%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 0 4rem;
+    list-style: none;
+}
+
+nav a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 6rem;
+}
+
+.header-p {
+    font-size: 1.2rem;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.header-image-wrapper {
+    flex-basis: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.icon-wave-stripe {
+    width: 80%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 4rem solid #FFFFFF;
+}
+
+/*------------------5. MAIN-----------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*------------------5.1. MAIN-HELLO---------------*/
+
+.main-hello {
+    width: 50%;
+    padding: 5rem;
+}
+
+.main-hello-text {
+
+}
+
+/*------------------5.2. MAIN-WORK----------------*/
+
+
+/*------------------5.3. MAIN-SERVICES------------*/
+
+
+/*------------------6. FORM-----------------------*/
+
+
+/*------------------7. FOOTER---------------------*/
+
+
+
+
+
+
+
