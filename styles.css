@@ -38,11 +38,13 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--color-bg-headers-primary-purple);
+    color: var(--color-primary-text-black);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     width: 100vw;
+    overflow-x: hidden;
 }
+
 button {
     color: #FFFFFF;
     background-color: var(--color-buttons-pink);
@@ -51,12 +53,14 @@ button {
     font-size: 0.7rem;
     margin: 1rem;
     padding: 0.5rem 1.5rem;
-    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0,0,0,0.5);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: "Merriweather", serif;
     font-weight: 400;
 }
@@ -70,10 +74,23 @@ h2 {
     font-size: 1.3rem;
     padding: 0.5rem;
     font-weight: 700;
+    color: var(--color-bg-headers-primary-purple);
+}
+
+h4,
+h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: var(--color-bg-headers-primary-purple);
 }
 
 a:link {
     color: var(--color-bg-headers-primary-purple);
+    text-decoration: none;
 }
 
 a:hover {
@@ -114,7 +131,7 @@ header {
 
 nav a:link {
     color: #FFFFFF;
-    text-decoration: none;
+    font-weight: 300;
 }
 
 .header-text {
@@ -128,6 +145,7 @@ nav a:link {
 
 .header-p {
     font-size: 1.2rem;
+    font-weight: 300;
     padding: 0.5rem 0 1rem 0;
 }
 
@@ -141,7 +159,7 @@ nav a:link {
     width: 80%;
 }
 
-.triangle {
+.triangle-left {
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
@@ -154,6 +172,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 0 auto;
 }
 
 
@@ -161,25 +180,143 @@ main {
 
 .main-hello {
     width: 50%;
-    padding: 5rem;
+    padding: 8rem;
+    text-align: center;
 }
 
 .main-hello-text {
-
+    padding: 3rem 0 0 0;
 }
 
 /*------------------5.2. MAIN-WORK----------------*/
 
+.main-work {
+    background-color: var(--color-bg-light-grey);
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-top: 4rem solid #FFFFFF;
+}
+
+.main-work-wrapper {
+    padding: 6rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.main-work-article {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0 2rem;
+}
+
+.main-work-article:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.work-article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    flex: 1 0 auto;
+    max-width: 20%;
+    padding: 0;
+}
+
+.work-article-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.icon-wave {
+    width: 15%;
+}
+
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link-wrapper hr {
+    background-color: var(--color-bg-headers-primary-purple);
+    width: 0.7rem;
+    height: 1px;
+    border: 0;
+}
+
+article a:link {
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.work-image-wrapper {
+    flex: 0 1 40rem;
+}
+
+.work-image {
+    width: 100%;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+}
 
 /*------------------5.3. MAIN-SERVICES------------*/
 
+.main-services {
+    width: 100%;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 12rem;
+    gap: 2rem;
+}
+
+.services-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 2 0 30%;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-bg-headers-primary-purple);
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.services-icon-wrapper {
+    flex: 1 1 1rem;
+}
+
+.services-icon {
+    width: 3rem;
+}
 
 /*------------------6. FORM-----------------------*/
 
 
 /*------------------7. FOOTER---------------------*/
+footer {
+     background-color: var(--color-primary-text-black);
+     color: #FFFFFF;
+     text-align: center;
+     padding: 1.5rem;
+ }
 
-
+footer p {
+    font-weight: 300;
+}
 
 
 
