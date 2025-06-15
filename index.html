@@ -17,7 +17,7 @@
     <div class="header-text">
         <h1>Your website is an investment in the succes of your business.</h1>
         <p class="header-p">We are here to help you succeed.</p>
-        <button class="" type="button">LET'S WORK TOGETHER</button>
+        <a href="#lets-work-together"><button type="button">LET'S WORK TOGETHER</button></a>
     </div>
     <div class="header-image-wrapper">
         <img class="icon-wave-stripe" src="assets/squiggle_line_stripe.svg" alt="wave"/>
@@ -25,8 +25,10 @@
     <div class="triangle-left"></div>
 </header>
 <main>
+    <div class="h3-wrapper">
+        <h3>hello</h3>
+    </div>
     <section class="main-hello">
-        <h3></h3>
         <h2>Rekupe is a digital agency in Los Angeles.</h2>
         <h2>We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.
         </h2>
@@ -34,6 +36,9 @@
         </h2>
         <p class="main-hello-text">Have a question? <a href="/">Click here</a> to contact us!</p>
     </section>
+    <div class="h3-wrapper">
+        <h3 class="h3-work">work</h3>
+    </div>
     <section class="main-work">
         <div class="triangle-right"></div>
         <div class="main-work-wrapper">
@@ -90,6 +95,9 @@
         </div>
         <div class="triangle-left"></div>
     </section>
+    <div class="h3-wrapper">
+         <h3 class="h3-services">services</h3>
+    </div>
     <section class="main-services">
         <div class="services-wrapper">
             <article class="services-article">
@@ -161,9 +169,28 @@
             </article>
         </div>
     </section>
-    <form>
-
+    <section class="form-container">
+        <div class="triangle-right"></div>
+        <div class="form-content">
+    <h6 id="lets-work-together">Let's work together</h6>
+    <p class="p-form">Have a question? Need a quote? Let us know!</p>
+    <form class="work-together-form">
+        <label class="form-label">
+            Name
+            <input class="form-input" type="text" placeholder="Name" />
+        </label>
+        <label class="form-label">
+            Email
+            <input class="form-input" type="email" placeholder="Email" />
+        </label>
+        <label class="form-label">
+            Message
+            <textarea class="form-input-message" placeholder="Message" rows="8" cols="1"></textarea>
+        </label>
+        <button type="submit" class="form-button">SEND</button>
     </form>
+        </div>
+    </section>
 </main>
 <footer>
         <p>Business website opdracht &copy; NOVI Hogeschool 2022</p>
